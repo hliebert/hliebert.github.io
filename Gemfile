@@ -15,4 +15,6 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
   gem "minimal-mistakes-jekyll"
+  gem 'jekyll-email-protect'
+  gem 'jekyll-scholar'
 end

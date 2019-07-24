@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -58,24 +58,45 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
+  - jekyll-email-protect
+  - jekyll/scholar
 
 author:
   name   : "Helge Liebert"
   avatar : "/assets/images/profile4.jpg"
   bio    : "Postdoctoral fellow<br>Harvard University"
+  email  : helge.liebert@gmail.com
+  location: Cambridge, MA
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/hliebert"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+scholar:
+  last_name: Liebert
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
+  source: /assets/bib/
+  bibliography: pubs.bib wps.bib wip.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
 
 # footer:
 #   links:
