@@ -13,13 +13,12 @@
   {% if entry.type == "thesis" %}
     {{reference}}
   {% else %}
-      <!-- <span class="title">{{entry.title}}</span> -->
-      <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}}</a></span>
-      <!-- {% if entry.year %}                                                                                            -->
-      <!--     <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}} ({{entry.year}})</a></span>  -->
-      <!-- {% else %}                                                                                                     -->
-      <!--     <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}}</a></span>                   -->
-      <!-- {% endif %}                                                                                                    -->
+      <!-- <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}}</a></span> -->
+      {% if entry.url %}
+          <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}}</a></span>
+      {% else %}
+          <span class="title">{{entry.title}}</span>
+      {% endif %}
       <span class="author">
       {% for author in entry.author_array %}
         {% if forloop.length == 1 %}
@@ -91,30 +90,30 @@
   {% endif %}
 
   <span class="links">
-  <!-- {% if entry.abstract %} -->
-    <!-- <a class="abstract">Abstract</a> -->
-  <!-- {% endif %} -->
-  {% if entry.arxiv %}
-    <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
+  {% if entry.abstract %}
+      <a class="abstract">Abstract</a>
   {% endif %}
-  <!-- {% if entry.html %}                                                                                                              -->
-  <!--   <a href="{{ entry.html }}" target="_blank">HTML</a>                                                                            -->
-  <!-- {% endif %}                                                                                                                      -->
-  <!-- {% if entry.pdf %}                                                                                                               -->
-  <!--   <a href="{{ entry.pdf | prepend: '/files/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>         -->
-  <!-- {% endif %}                                                                                                                      -->
-  <!-- {% if entry.supp %}                                                                                                              -->
-  <!--   <a href="{{ entry.supp | prepend: '/files/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>       -->
-  <!-- {% endif %}                                                                                                                      -->
-  <!-- {% if entry.poster %}                                                                                                            -->
-  <!--   <a href="{{ entry.poster | prepend: '/files/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>   -->
-  <!-- {% endif %}                                                                                                                      -->
-  <!-- {% if entry.slides %}                                                                                                            -->
-  <!--   <a href="{{ entry.slides | prepend: '/files/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>   -->
-  <!-- {% endif %}                                                                                                                      -->
-  <!-- {% if entry.code %}                                                                                                              -->
-  <!--   <a href="{{ entry.code }}" target="_blank">Code</a>                                                                            -->
-  <!-- {% endif %}                                                                                                                      -->
+  {% if entry.arxiv %}
+      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
+  {% endif %}
+  {% if entry.html %}
+      <a href="{{ entry.html }}" target="_blank">HTML</a>
+  {% endif %}
+  {% if entry.pdf %}
+      <a href="{{ entry.pdf | prepend: '/assets/docs/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
+  {% endif %}
+  {% if entry.supp %}
+      <a href="{{ entry.supp | prepend: '/assets/docs/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>
+  {% endif %}
+  {% if entry.poster %}
+      <a href="{{ entry.poster | prepend: '/assets/docs/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>
+  {% endif %}
+  {% if entry.slides %}
+      <a href="{{ entry.slides | prepend: '/assets/docs/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>
+  {% endif %}
+  {% if entry.code %}
+      <a href="{{ entry.code }}" target="_blank">Code</a>
+  {% endif %}
   </span>
 
   <!-- Hidden abstract block -->

@@ -92,7 +92,7 @@ $(document).ready(function() {
       events: true // if true, emit custom events
     });
   }
-  
+
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
@@ -132,4 +132,14 @@ $(document).ready(function() {
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
+// });
+
+  // abstract, added later by helge
+    $('a.abstract').click(function() {
+        $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
+    });
+    $('a.bibtex').click(function() {
+        $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
+    });
+
 });

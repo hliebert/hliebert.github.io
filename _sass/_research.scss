@@ -83,12 +83,13 @@
             -o-transition: 0.15s ease;
             transition: all 0.15s ease;
         }
-        // span.abstract.hidden {
+        span.abstract.hidden {
             // border: dashed 1px $background-color;
-        // }
-        // span.abstract.hidden.open {
-            // border-color: $grey-color;
-        // }
+            border: dashed 1px;
+        }
+        span.abstract.hidden.open {
+            border-color: $border-color;
+        }
     }
     abbr {
         position: absolute;
