@@ -11,22 +11,21 @@ of boulder problems or routes I enjoyed. Most of my ascents are logged on
 
 ---
 Blindfisch fb. 7b, Averstal.
-![Blindfisch](/assets/images/climbing/avers1.png)
+![Blindfisch](/assets/images/climbing/avers1.png){:width="50%"}
 
 ---
 Zilliman fb. 7a, Averstal.
-![Zilliman](/assets/images/climbing/avers2.png)
+![Zilliman](/assets/images/climbing/avers2.png){:width="50%"}
 
 ---
 Hopper fb. 6c+, Chironico.
-![Hopper](/assets/images/climbing/chironico1.png)
+![Hopper](/assets/images/climbing/chironico1.png){:width="50%"}
 
 ---
 Bea on Barbarella fb. 6c+, Averstal.
 
-![Barbarella](/assets/images/climbing/avers4.png)
+![Barbarella](/assets/images/climbing/avers4.png){:width="50%"}
 
 ---
 Rock Republic, 7b, Geyikbayiri.
-![Barbarella](/assets/images/climbing/geyikbayiri1.jpg)
-
+![Barbarella](/assets/images/climbing/geyikbayiri1.jpg){:width="50%"}
