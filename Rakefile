@@ -35,9 +35,9 @@ namespace :build do
   end
 
   desc "Build _site/ for production"
-  task :pro => do
+  task :pro do
     puts "\n## Building Jekyll to _site/"
-    status = system("bundlde exec jekyll build")
+    status = system("bundle exec jekyll build")
     puts status ? "Success" : "Failed"
   end
 end
