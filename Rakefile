@@ -78,3 +78,7 @@ end
 desc "Commit and deploy _site/"
 task :commit_deploy => [:commit, :deploy] do
 end
+
+desc "Build, Commit and deploy _site/"
+task :all => [:"build:pro", :commit, :deploy] do
+end
