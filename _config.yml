@@ -60,7 +60,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-redirect-from
   - jekyll-email-protect
-  - jekyll/scholar
+  - jekyll-scholar
 
 author:
   name   : "Helge Liebert"
