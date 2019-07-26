@@ -22,3 +22,7 @@ Work in progress
 <!-- ### Work in progress -->
 {% bibliography -f wip %}
 
+Other publications
+----------------
+<!-- ### Other publications -->
+{% bibliography -f other %}
