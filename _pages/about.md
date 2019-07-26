@@ -3,15 +3,18 @@ permalink: /about/
 # title: "About"
 # title: "On the Road to Asymptopia"
 redirect_from: /
+# layout: archive
+classes: wide
 ---
 
 
 Welcome to my personal website.
 
 I am a postdoctoral fellow at the [Department of Health Care
-Policy](https://www.hcp.med.harvard.edu/) at Harvard University and affiliated
-with [CESifo (Munich)](http://www.cesifo-group.de/ifoHome.html). I will be on
-the Job Market 2019/2020.
+Policy](https://www.hcp.med.harvard.edu/){:target="_blank"} at Harvard
+University and affiliated with [CESifo
+(Munich)](http://www.cesifo-group.de/ifoHome.html){:target="_blank"}. I will be
+on the Job Market 2019/2020.
 
 <!-- My main research interests are in labor/health economics, social security and -->
 <!-- applied microeconometrics. I am especially interested in questions related to -->
@@ -31,5 +34,5 @@ and applied microeconometrics.
 <!-- * [My CV]({{ site.url }}/assets/doc/cv-helge-liebert.pdf) -->
 
 Do you have questions or suggestions? Feel free to [write me a mail](mailto:
-helge.liebert@gmail.com).
+helge.liebert@gmail.com){:target="_blank"}.
 

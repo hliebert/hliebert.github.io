@@ -1,10 +1,24 @@
 ---
 layout: archive
-permalink: /teaching/
-title: "Teaching"
+permalink: /research/
+title: "Research"
+classes: wide
 ---
 
 
 
-Course 1
+Articles
 --------------
+<!-- ### Articles -->
+{% bibliography -f pubs %}
+
+Working papers
+--------------
+<!-- ### Working papers -->
+{% bibliography -f wps %}
+
+Work in progress
+----------------
+<!-- ### Work in progress -->
+{% bibliography -f wip %}
+
