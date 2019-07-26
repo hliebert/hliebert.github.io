@@ -1,4 +1,4 @@
 # My website
 
-jekyll-scholar is not supported, requires manual build and publishing of
-separate gg-pages branch.
+Github pages does not support Jekyll plugins. The site requires a manual build of develop branch and
+publishing `_site_` on master. The process is automated using `rake`.
