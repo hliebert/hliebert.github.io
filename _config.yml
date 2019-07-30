@@ -82,6 +82,9 @@ author:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
+    - label: "Orcid"
+      icon: "ai ai-orcid-square ai-fw"
+      url: "https://orcid.org/0000-0003-4311-289X"
 
 scholar:
   last_name: Liebert
