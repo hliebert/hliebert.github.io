@@ -13,74 +13,86 @@
   {% if entry.type == "thesis" %}
     {{reference}}
   {% else %}
+
       <!-- <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}}</a></span> -->
       {% if entry.url %}
           <span class="title"><a href="{{ entry.url }}" target="_blank">{{entry.title}}</a></span>
       {% else %}
           <span class="title">{{entry.title}}</span>
       {% endif %}
-      <span class="author">
-      {% for author in entry.author_array %}
-        {% if forloop.length == 1 %}
-          {% if author.last == site.scholar.last_name %}
-            <em>{{author.last}}, {{author.first}}</em>
-          {% else %}
-            {{author.last}}, {{author.first}}
-          {% endif %}
-        {% else %}
-          {% unless forloop.last %}
-            {% unless forloop.rindex == 2 %}
-              {% if author.last == site.scholar.last_name %}
-                <em>{{author.last}}, {{author.first}}</em>;
-              {% else %}
-                {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>;
-                {% else %}
-                  {{author.last}}, {{author.first}};
-                {% endif %}
-              {% endif %}
-            {% else %}
-            {% if author.last == site.scholar.last_name %}
-              <em>{{author.last}}, {{author.first}}</em>
-            {% else %}
-              {% if site.data.coauthors[author.last] %}
-                <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
-              {% else %}
-                {{author.last}}, {{author.first}}
-              {% endif %}
-            {% endif %}
-          {% endunless %}
-          {% else %}
-            {% if author.last == site.scholar.last_name %}
-              and <em>{{author.last}}, {{author.first}}</em>
-            {% else %}
-              {% if site.data.coauthors[author.last] %}
-                and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
-              {% else %}
-                and {{author.last}}, {{author.first}}
-              {% endif %}
-            {% endif %}
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </span>
 
-    <span class="periodical">
-    {% if entry.year %}
-      {{entry.year}},
-    {% endif %}
-    {% if entry.type == "article" %}
-      {% if entry.pages != "" %}
-      <em>{{entry.journal}}</em> {{entry.volume}}, {{entry.pages}}
-      {% else %}
-      <em>{{entry.journal}}</em> {{entry.volume}}
+
+      <span class="periodical">
+      {% if entry.year %}
+        {{entry.year}},
       {% endif %}
-    {% elsif entry.type == "techreport" %}
-      <em>{{entry.institution}}</em> {{entry.number}}
-    {% elsif entry.type == "inproceedings" %}
-      <em>In {{entry.booktitle}}</em>
-    {% endif %}
-    </span>
+      {% if entry.type == "article" %}
+        {% if entry.pages != "" %}
+        <em>{{entry.journal}}</em> {{entry.volume}}, {{entry.pages}}
+        {% else %}
+        <em>{{entry.journal}}</em> {{entry.volume}}
+        {% endif %}
+      {% elsif entry.type == "techreport" %}
+        <em>{{entry.institution}}</em> {{entry.number}}
+      {% elsif entry.type == "inproceedings" %}
+        In: <em>{{entry.booktitle}}</em>
+      {% elsif entry.type == "incollection" %}
+        <!-- in: <em>{{entry.booktitle}}</em>, ed. by {{entry.editor}}, {{entry.address}}: {{entry.publisher}}, {{entry.pages}} -->
+        in: <em>{{entry.booktitle}}</em>, {{entry.address}}: {{entry.publisher}}, {{entry.pages}}
+      {% endif %}
+      </span>
+
+      <span class="author">
+      {% assign coauthorlist = entry.author_array | where_exp:"author", "author.last != site.scholar.last_name" %}
+      <!-- {#% for author in entry.author_array %#} -->
+          {% for author in coauthorlist %}
+              {% if forloop.length == 1 %}
+                  {% if site.data.coauthors[author.last] %}
+                      (With <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | truncate: 2, "." }} {{author.last}}</a>)
+                  {% else %}
+                      (With {{author.first | truncate: 2, "." }} {{author.last}})
+                  {% endif %}
+              {% else %}
+                  {% if forloop.index == 1 %}
+                      {% if forloop.rindex == 2 %}
+                          {% if site.data.coauthors[author.last] %}
+                              (With <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | truncate: 2, "." }} {{author.last}}</a>
+                          {% else %}
+                              (With {{author.first | truncate: 2, "." }} {{author.last}}
+                          {% endif %}
+                      {% else %}
+                          {% if site.data.coauthors[author.last] %}
+                              (With <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | truncate: 2, "." }} {{author.last}}</a>,
+                          {% else %}
+                              (With {{author.first | truncate: 2, "." }} {{author.last}},
+                          {% endif %}
+                      {% endif %}
+                  {% else %}
+                      {% unless forloop.last %}
+                          {% unless forloop.rindex == 2 %}
+                              {% if site.data.coauthors[author.last] %}
+                                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | truncate: 2, "." }} {{author.last}}</a>,
+                              {% else %}
+                                  {{author.first | truncate: 2, "." }} {{author.last}},
+                              {% endif %}
+                          {% else %}
+                              {% if site.data.coauthors[author.last] %}
+                                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | truncate: 2, "." }} {{author.last}}</a>
+                              {% else %}
+                                  {{author.first | truncate: 2, "." }} {{author.last}}
+                              {% endif %}
+                          {% endunless %}
+                      {% else %}
+                          {% if site.data.coauthors[author.last] %}
+                              and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | truncate: 2, "." }} {{author.last}}</a>)
+                          {% else %}
+                              and {{author.first | truncate: 2, "." }} {{author.last}})
+                          {% endif %}
+                      {% endunless %}
+                  {% endif %}
+              {% endif %}
+          {% endfor %}
+      </span>
 
     <span class="addendum">
     {% if entry.addendum != "" %}

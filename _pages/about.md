@@ -20,10 +20,10 @@ University and affiliated with [CESifo
 <!-- applied microeconometrics. I am especially interested in questions related to -->
 <!-- disability insurance and the education of individuals with disabilities. -->
 
-My current research focuses on questions related to disability policy, especially
-disability insurance and the education of individuals with disabilities.
-Broadly, my research interests are in labor/health economics, social security
-and applied microeconometrics.
+My current research focuses on questions related to disability policy,
+especially disability insurance and the education of individuals with
+disabilities. More broadly, my research interests are in labor/health economics,
+social security and applied microeconometrics.
 
 <!-- During my PhD, I was associated with the research group at the [Center for Disability and -->
 <!-- Integration](http://www.cdi.unisg.ch/en) and the Swiss Institute for Empirical Economic Research. -->
