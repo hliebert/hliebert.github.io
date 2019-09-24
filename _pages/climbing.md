@@ -18,8 +18,8 @@ Ginseng 5.12b, Shagg Crag, ME.
 ---
 Shaggin Waggon 5.12a, Shagg Crag, ME.
 
-![Shaggin Waggon](/assets/images/climbing/shaggin-waggon-2.jpg){:width="70%"}
 ![Shaggin Waggon](/assets/images/climbing/shaggin-waggon-1.jpg){:width="70%"}
+![Shaggin Waggon](/assets/images/climbing/shaggin-waggon-2.jpg){:width="70%"}
 
 ---
 Romper Room 5.12a, Sundown Ledge, NH.
