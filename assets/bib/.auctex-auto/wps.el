@@ -5,7 +5,6 @@
     "Liebert2017phys"
     "Balestra2017peers"
     "Balestra2017ssa"
-    "Balestra2017opioid"
-    "Eschenbaum2018reputation"))
+    "Balestra2017opioid"))
  :bibtex)
 
