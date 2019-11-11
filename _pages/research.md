@@ -6,16 +6,20 @@ classes: wide
 ---
 
 
-
-Articles
+Job market paper
 --------------
-<!-- ### Articles -->
-{% bibliography -f pubs %}
+<!-- ### Job market paper -->
+{% bibliography -f jm %}
 
 Working papers
 --------------
 <!-- ### Working papers -->
 {% bibliography -f wps %}
+
+Articles
+--------------
+<!-- ### Articles -->
+{% bibliography -f pubs %}
 
 Work in progress
 ----------------
