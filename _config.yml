@@ -104,7 +104,7 @@ scholar:
 analytics:
   provider               :  "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-84125119-3
+    tracking_id          : "UA-84125119-3"
 
 
 
