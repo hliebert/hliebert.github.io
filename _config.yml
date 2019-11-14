@@ -18,7 +18,9 @@ title: Helge Liebert
 email:
 url: https://hliebert.github.io
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal research homepage.
+  "My personal research homepage."
+baseurl: "about/"
+repository: "hliebert/hliebert.github.io"
 twitter_username:
 github_username: hliebert
 minimal_mistakes_skin: default
