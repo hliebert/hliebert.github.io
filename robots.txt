@@ -1,1 +1,1 @@
-Sitemap: https://hliebert.github.io/sitemap.xml
+Sitemap: https://hliebert.github.io/about/sitemap.xml
