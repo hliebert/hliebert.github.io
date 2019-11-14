@@ -35,9 +35,9 @@ namespace :build do
   end
 
   desc "Build _site/ for production"
+  ENV["JEKYLL_ENV"] = "production"
   task :pro do
     puts "\n## Building Jekyll to _site/"
-    ENV["JEKYLL_ENV"] = "production"
     status = system("bundle exec jekyll build")
     puts status ? "Success" : "Failed"
   end
