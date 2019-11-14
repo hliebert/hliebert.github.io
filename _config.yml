@@ -104,7 +104,7 @@ scholar:
 
 # Analytics
 analytics:
-  provider : "google-universal"
+  provider : "google"
   google:
     tracking_id : "UA-84125119-3"
     anonymize_ip : false
