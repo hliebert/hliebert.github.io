@@ -19,7 +19,7 @@ email:
 url: https://hliebert.github.io
 description: >- # this means to ignore newlines until "baseurl:"
   "My personal research homepage."
-baseurl: "about/"
+# baseurl: "about/"
 repository: "hliebert/hliebert.github.io"
 twitter_username:
 github_username: hliebert
