@@ -104,10 +104,10 @@ scholar:
 
 # Analytics
 analytics:
-  provider : "google"
+  provider : "google-universal"
   google:
     tracking_id : "UA-84125119-3"
-    anonymize_ip : # true, false (default)
+    anonymize_ip : false
 
 
 # footer:
