@@ -5,12 +5,6 @@ title: "Research"
 classes: wide
 ---
 
-
-Job market paper
---------------
-<!-- ### Job market paper -->
-{% bibliography -f jm %}
-
 Working papers
 --------------
 <!-- ### Working papers -->
