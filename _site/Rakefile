@@ -67,6 +67,7 @@ task :deploy do
   puts status ? "Success" : "Failed"
   puts "\n## Forcing the _site subdirectory to be project root"
   status = system("git filter-branch --subdirectory-filter _site/ -f")
+  # status = system("git filter-repo --to-subdirectory-filter _site/ -f") ## needs git filter-repo installed
   puts status ? "Success" : "Failed"
   puts "\n## Switching back to develop branch"
   status = system("git checkout develop")
