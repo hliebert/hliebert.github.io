@@ -66,9 +66,9 @@ plugins:
 author:
   name   : "Helge Liebert"
   avatar : "/assets/images/profile4.jpg"
-  bio    : "Postdoctoral fellow<br>Harvard University"
+  bio    : "Postdoctoral fellow<br>University of Zürich"
   email  : helge.liebert@gmail.com
-  location: Cambridge, MA
+  location: Zürich, CH
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
