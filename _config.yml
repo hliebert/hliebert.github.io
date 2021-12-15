@@ -73,9 +73,7 @@ author:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/helgeliebert"
+      url: "https://www.linkedin.com/in/helge-liebert-315738150/"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hliebert"
@@ -85,9 +83,11 @@ author:
     - label: "Orcid"
       icon: "ai ai-orcid-square ai-fw"
       url: "https://orcid.org/0000-0003-4311-289X"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/helgeliebert"
     - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/helge-liebert-315738150/"
+      icon: "fab fa-linkedin-in"
 
 scholar:
   last_name: Liebert
