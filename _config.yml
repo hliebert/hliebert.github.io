@@ -82,12 +82,12 @@ author:
     - label: "Orcid"
       icon: "fab fa-orcid"
       url: "https://orcid.org/0000-0003-4311-289X"
-    - label: "Linkedin"
-      icon: "fab fa-linkedin-in"
-      url: "https://www.linkedin.com/in/helge-liebert-315738150/"
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://twitter.com/helgeliebert"
+    - label: "Linkedin"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/helge-liebert-315738150/"
 
 scholar:
   last_name: Liebert
