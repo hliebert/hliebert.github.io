@@ -67,15 +67,15 @@ author:
   name   : "Helge Liebert"
   avatar : "/assets/images/profile4.jpg"
   bio    : "Postdoctoral fellow<br>University of Zürich"
-  email  : helge.liebert@gmail.com
+  email  : helge.liebert@econ.uzh.ch
   location: Zürich, CH
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/helgeliebert"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hliebert"
@@ -85,6 +85,9 @@ author:
     - label: "Orcid"
       icon: "ai ai-orcid-square ai-fw"
       url: "https://orcid.org/0000-0003-4311-289X"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/helge-liebert-315738150/"
 
 scholar:
   last_name: Liebert
