@@ -53,7 +53,7 @@ task :commit do
   status = system("git commit -m \"#{message}\"")
   puts status ? "Success" : "Failed"
   puts "\n## Pushing commits to remote"
-  status = system("git push -f origin develop")
+  status = system("git push origin develop")
   puts status ? "Success" : "Failed"
 end
 
@@ -73,7 +73,7 @@ task :deploy do
   status = system("git checkout develop")
   puts status ? "Success" : "Failed"
   puts "\n## Pushing all branches to origin"
-  status = system("git push -f --all origin")
+  status = system("git push --all origin")
   puts status ? "Success" : "Failed"
 end
 
