@@ -66,8 +66,8 @@ plugins:
 author:
   name   : "Helge Liebert"
   avatar : "/assets/images/profile4.jpg"
-  bio    : "Postdoctoral fellow<br>University of Zürich"
-  email  : helge.liebert@econ.uzh.ch
+  bio    : "Data Scientist<br>Swiss National Bank"
+  email  : helge.liebert@gmail.com
   location: Zürich, CH
   links:
     # - label: "Website"
