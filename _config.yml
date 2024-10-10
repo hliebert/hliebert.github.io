@@ -77,9 +77,6 @@ author:
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hliebert"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
     # - label: "Orcid"
     #   icon: "fab fa-fw fa-orcid"
     #   url: "https://orcid.org/0000-0003-4311-289X"
@@ -121,9 +118,6 @@ analytics:
 #     - label: "GitHub"
 #       icon: "fab fa-fw fa-github"
 #       url: "https://github.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
 
 defaults:
   # _posts
