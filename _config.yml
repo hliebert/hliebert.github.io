@@ -27,6 +27,7 @@ minimal_mistakes_skin: default
 search: false
 
 # Build settings
+github: [metadata]
 markdown: kramdown
 # remote_theme: mmistakes/minimal-mistakes
 # theme: minimal-mistakes-jekyll
@@ -64,10 +65,10 @@ plugins:
   - jekyll-scholar
 
 author:
-  name   : "Helge Liebert"
-  avatar : "/assets/images/profile4.jpg"
-  bio    : "Data Scientist<br>Swiss National Bank"
-  email  : helge.liebert@gmail.com
+  name: "Helge Liebert"
+  avatar: "/assets/images/profile4.jpg"
+  bio: "Data Scientist<br>Swiss National Bank"
+  email: helge.liebert@gmail.com
   location: Zürich, CH
   links:
     # - label: "Website"
@@ -107,11 +108,10 @@ scholar:
 
 # Analytics
 analytics:
-  provider : "google"
+  provider: "google"
   google:
-    tracking_id : "UA-84125119-3"
-    anonymize_ip : false
-
+    tracking_id: "UA-84125119-3"
+    anonymize_ip: false
 
 # footer:
 #   links:
